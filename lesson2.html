@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>LEARN WEB</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body>
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-background">
+                <div class="container-fluid">
+                    <a class="navbar-brand">Learn Front End</a>
+                
+                    <ul class="nav navbar-left">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+
+
+
+                <div id="my-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav ml-auto" id="side-nav">
+                        <li>
+                            <a href="lesson.html" >HTML <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="collapse" data-target="#css">CSS <span class="sr-only">(current)</span></a>
+                            <ul class="collapse" id="css">
+                                <li class="nav-item">
+                                    <a href="#embed">CSS EMBED</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#targeting">TARGETING</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#font-size">FONT-SIZE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#color">COLOR</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#font-weight">FONT-WEIGHT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#background-color">BACKGROUND-COLOR</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#height-and-width">HEIGHT AND WIDTH</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="#margin-padding">MARGIN AND PADDING</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#font-family">FONT-FAMILY</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#nav">NAV</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#hover">HOVER</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#specificity">SPECIFICTY</a>
+                                </li>
+                            </ul>
+                            <!-- DROPDOWN HERE -->
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="collapse" data-target="#javascript">JAVASCRIPT <span class="sr-only">(current)</span></a>
+                            <ul class="collapse" id="javascript">
+                                <li class="nav-item">
+                                    HTML
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="collapse" data-target="#bootstrap">BOOTSTRAP <span class="sr-only">(current)</span></a>
+                            <ul class="collapse" id="bootstrap">
+                                <li class="nav-item">
+                                    HTML
+                                </li>
+                                    
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="collapse" data-target="#jquery">JQUERY<span class="sr-only">(current)</span></a>
+                            <ul class="collapse" id="jquery">
+                                <li class="nav-item">
+                                    HTML
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+       
+                </div>
+                    
+                
+            </nav>
+
+            <div class="html-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-10">
+                            <h1>
+                                CSS
+                            </h1>
+                            <hr>
+                            <p>CSS or <em>Cascading Style Sheet</em> is used to design a website
+                                TAKE NOTE! ALL MY CSS SAMPLE WILL BE DONE IN INTERNAL CSS.
+                            </p>                
+
+                            <!-- <div id="doctype"><br> <br></div> -->
+                            <div class="lesson-block" id="embed">
+                                <h3>TYPES OF CSS EMBEDING</h3>            
+                                <h4>INTERNAL CSS</h4>
+                                <p>
+                                    Internal css is a way of embeding the css to the html document by defining a &lt;style&gt; &lt;/style&gt; in the head tag
+                                    and all the css targeting, styling and media screen targeting will be done inside the style tag.
+                                </p>
+                                <img src="img/cssInternal.png" alt="" class="img-fluid">
+
+                                <h4>INLINE CSS</h4>
+                                <p>
+                                    Inline css is done by defining a style attribute inside the element tag and applying a css declation in the style attribute each declarations are seperated 
+                                    by semi colon ;
+                                </p>
+                                <img src="img/cssInline.png" alt="" class="img-fluid">
+
+                                <h4>EXTERNAL CSS</h4>
+                                <p>
+                                    External css is the ideal way of embedding the CSS to html because it make the code much easier to read for developers.
+                                    External css is done by making a CSS file and link the file to Html.
+                                </p>
+                                <img src="img/cssExternal.png" alt="" class="img-fluid">
+                            </div>
+                            
+                            <div class="lesson-block" id="targeting">
+                                <h3>CSS TARGETING</h3>
+                                <p>
+                                    CSS targeting is very important because it is the process of selecting which element to style or to add changes
+                                    for every element to style must have a curly braces {} it will serve as a code block for the styling element inside the 
+                                    curly braces are all CSS declation.
+                                </p>
+                                <h3>TYPES OF CSS TARGETING</h3>
+                                <h4>Selecting by element</h4>
+                                <p>
+                                    Selecting by element is the process by targeting only the name of the element
+                                </p>
+                                <img src="img/cssTargetElement.png" alt="" class="img-fluid">
+                                <h4>Selecting by Class name</h4>
+                                <p>
+                                    Selecting by Classname is a process by defining a class attrbute for element to target TAKE NOTE!
+                                    to target a class in the CSS code block it must have a dot (.) before the classname. Also Classname may apply to different elements
+                                    to inheret the CSS declaration.
+                                </p>
+                                <img src="img/cssClassname.png" alt="" class="img-fluid">
+                                <h4>Selecting by Id</h4>
+                                <p>Selecting by Id need to set an Id attribute for element, In the CSS code block to style an Element by Id it must have a hastag (#) before the 
+                                    Id name. TAKE NOTE! having an Id attribute with same name is consider a bad practice because Id must have a unique name.
+                                </p>
+                                <img src="img/cssId.png" alt="" class="img-fluid">
+                            </div>
+
+                            <div class="lesson-block" id="font-size">
+                                <h5>KEY POINTS</h5>
+                                <p>
+                                    
+                                    CSS declarations is the term called to the combination of property and value in the css. For example
+                                    p{font-size: 20px;} the p is the element name, the curly braces is the code block everything inside the
+                                    code block will apply to the p element,
+                                     the font-size is the property and the 20px is the value.
+                                </p>
+                                
+                                <h3>FONT-SIZE</h3>
+                                <p> font-size property will change the size of the text depending on the given value. Different font-size unit value:
+                                    px, pt, rem, em and etc.
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h4>SAMPLE CODE</h4>
+                                        <img src="img/font-sizeSample.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h4>RESULT IN WEB</h4>
+                                        <img src="img/font-sizeResult.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="lesson-block" id="color">
+                                <h3>COLOR</h3>
+                                <p>
+                                    the color property change the color of the text. there are different types for value of a color
+                                    value by name: these are the white, red, blue and etc.
+                                    value by rgb() it stands for red, green and blue, example is rgba(255,0,0) the number is range from 0 to 255
+                                    value by hexadecimal the value must start with hastag (#) symbol for example #f7f7f7
+                                </p>    
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h4>SAMPLE CODE</h4>
+                                        <img src="img/color.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h4>RESULT IN WEB</h4>
+                                        <img src="img/colorResult.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="lesson-block" id="font-weight">
+                                <h3>FONT-WEIGHT</h3>
+                                <p>
+                                    Font-weight property change the weight of the font it can make the font bolder or lighter
+                                    value can be by name and number
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h4>SAMPLE CODE</h4>
+                                        <img src="img/font-weight.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h4>RESULT IN WEB</h4>
+                                        <img src="img/font-weightResult.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                            <div class="lesson-block" id="background-color">
+                                <h3>BACKGROUND COLOR</h3>
+                                <p>
+                                    Background-color property change the default background color of the element. Value can be by name, rgb() and hexadecimal.
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h5>SAMPLE CODE</h5>
+                                        <img src="img/background-color.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h5>RESULT IN WEB</h5>
+                                            <img src="img/background-colorResult.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lesson-block" id="height-and-width">
+                                <h3>HEIGHT AND WIDTH</h3>
+                                <p>
+                                    Height property change the height of the element value can be by px, rem, em and etc.
+                                    Width property change the width of the element value can be by px, rem, em and etc
+                                    
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h5>SAMPLE CODE</h5>
+                                        <img src="img/heightAndWidth.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h5>RESULT IN WEB</h5>
+                                            <img src="img/heightAndWidthResult.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lesson-block" id="margin-padding">
+                                <h5>Key points</h5>
+                                <p>BOX MODEL it is a term that describe the element content size, padding, margin and etc
+                                    in other words all element treat as a container or box and all of them have a default padding or space outside the content, margin it is a space outside the padding and etc.
+                                </p>
+                                <h3>PADDING</h3>
+                                <p>
+                                    Padding property is a space outside the content size. Value can be define in different format for example
+                                    padding: 2px 3px 4px 5px; if the padding is define in a four value format it applies the clockwise rotation the first value is for
+                                    top direction the second is for right direction the third is for bottom direction and the last value is for left direction
+                                </p>
+                                <h3>MARGIN</h3>
+                                <p>
+                                    Margin property is a space outside the padding. The value for margin is same concept with the padding.
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h5>SAMPLE CODE</h5>
+                                        <img src="img/padding-margin.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h5>RESULT IN WEB</h5>
+                                            <img src="img/padding-marginResult.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>    
+                            </div>
+
+                            <div class="lesson-block" id="font-family">
+                                <h5>KEY POINTS</h5>
+                                <p>
+                                    When creating a website it is ideal to only use two to three kind of fonts
+                                    also it's recommended when your heading text have a font-family of serif, the 
+                                    body text must be sans-serif or vice versa.
+                                </p>
+                                <h3>FONT-FAMILY</h3>
+                                <p>
+                                    Font-family property change the font type of a text
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h5>SAMPLE CODE</h5>
+                                        <img src="img/font-family.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h5>RESULT IN WEB</h5>
+                                            <img src="img/font-familyResult.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="lesson-block" id="nav">
+                                <h5>KEY POINTS</h5>
+                                <p>
+                                    Display property have different values: <em>BLOCK</em> it make the element take the full width and with display: block,
+                                    elements can be manipulate the default width and height.
+                                    <br>
+                                    <em>INLINE</em>
+                                    it makes the elements display in one row TAKE NOTE! with inline value elements width and height cannot be changed.
+                                    <br>
+                                    <em>INLINE-BLOCK</em>
+                                    This value is flexible because it makes the elements display in one row also it can be manipulate the default width and height.
+                                </p>
+                                <h3>STYLING NAVBAR</h3>
+                                <p>
+                                    Styling navbar requires a several CSS declaration. TAKE NOTE!
+                                    there are different ways to style navigation in this sample code is just the basic of styling navbar
+                                    the list-style-type: none for ul tag is for removing the bullet points for every list-item, display: inline-block for li tag
+                                    make the li's display in a row and the text-decoration: none for
+                                    a tag is for removing the default text-decoration of the a tag
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h5>SAMPLE CODE</h5>
+                                        <img src="img/nav.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h5>RESULT IN WEB</h5>
+                                        <img src="img/navigationResult.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="lesson-block" id="hover">
+                                <h3>HOVER</h3>
+                                <p>
+                                    pseudo class it used to define a special state of an element in this example it will use hover pseudo class
+                                    hover will be triggered when the mouse is over the target element. and then all the CSS declaration inside hover code block will be applied
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h5>SAMPLE CODE</h5>
+                                        <img src="img/hover.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h5>RESULT IN WEB</h5>
+                                        <img src="img/hoverResult.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="lesson-block" id="specificity">
+                                <h3>SPECIFICITY</h3>
+                                <p>
+                                    This concept for styling is very crucial because SPECIFICITY comes to play when your code has a lot of
+                                    parent element and child elements. The sample code show that the div is the parent element while the h3 and p tag 
+                                    are the children because they are inside the div element. The simple task is to make the h3 color gold and the p tag set to background-color
+                                    red. TAKE NOTE! If the div element set the color: gold both children will applied the color gold. That's not want we want to do, the sample code 
+                                    below show the targeting by SPECIFICTY WORKS
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h5>SAMPLE CODE</h5>
+                                        <img src="img/specificity.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h5>RESULT IN WEB</h5>
+                                        <img src="img/specificityResult.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+                     
+            <div class="footer">
+                <p>&copy; LearnFrontEnd2021</p>
+            </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

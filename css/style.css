@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Shrikhand&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+p, a, li{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h1, .navbar-brand, h3, h4, h5{
+    font-family: 'Shrikhand', 'cursive';
+}
+.navbar-brand, .nav-link{
+    color: white!important;
+}
+.navbar-brand{
+    font-size: 2rem!important;
+}
+.nav-link{
+    font-weight: 700;
+    margin: 0 20px;
+    font-size: 1.2rem;
+}
+.nav-link:hover{
+    border-bottom: 3px solid black;
+    
+    
+}
+
+
+#html, #css {
+    list-style-type: none;
+}
+.home-content{
+    padding:4% 16px 4%;
+    background: linear-gradient(-45deg, deepskyblue 80%, red 20%);
+    
+}
+.laptop-bg h1{
+    color: white;
+    position: absolute;
+    width: 69%;
+    top: 30%;
+    left: 15%;
+    
+}
+.laptop-bg{
+    background: url("../img/laptop.png");
+    background-size: cover;
+    padding: 30% 0% 15%;
+    
+}
+
+.web-sign {
+    margin-top: 200px;
+    font-size: 10rem;
+    color: white;
+    text-align: center;
+    
+}
+.learning-content{
+    background: url("https://th.bing.com/th/id/R.5b28e70816733916a6d8c114a9225a90?rik=oNY%2bB1BOveoSWA&riu=http%3a%2f%2fil3.picdn.net%2fshutterstock%2fvideos%2f6282254%2fthumb%2f7.jpg&ehk=zrPB0tKcZGzYCsaBJI8baUClarPYQYuMOa6EJsLXNxk%3d&risl=&pid=ImgRaw&r=0");
+}
+.learning-content img{
+    width: 100%;
+    height: 400px;
+    padding: 50px;
+}
+.learning-animation {
+    animation: transitionIn 1s ease-in forwards;
+}
+
+.course-info{
+    padding: 7% 0% 0%;
+}
+.course-info img{
+    width: 100%;
+    height: 350px;
+}
+.course-info .col-lg-12{
+    padding: 30px 0;
+}
+.course-info .col-lg-12 p{
+    padding-right: 40px;
+}
+.course-info .col-lg-12:first-child{
+    /* background-color: rgb(202, 0, 202); */
+    background: linear-gradient(to left, red, orange);
+}
+.course-info .col-lg-12:nth-child(2){
+    background: linear-gradient(to bottom, deepskyblue 1%, white 99%);
+    /* background-color: #f7f7f7; */
+}
+.course-info .col-lg-12:nth-child(3){
+    background: linear-gradient(to right, yellow , brown);
+}
+.course-info .col-lg-12:nth-child(4){
+    background: linear-gradient(to left, purple, black);
+}
+.course-info .col-lg-12:nth-child(5){
+    background: linear-gradient(to left, blue, white);
+}
+.course-info p{
+    margin-top: 50px;
+    color: white;
+    font-size: 1.2rem;
+}
+.course-info button {
+    padding: 10px 25px;
+    border-radius: 10px;
+    /* background: linear-gradient(to left, deepskyblue, red); */
+    background-color: orange;
+    transition: all 300ms ease-in;
+}
+.course-info button a {
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    
+}
+.course-info button a:hover{
+    text-decoration: none;
+    
+}
+.course-info button:hover {
+    background-color: deepskyblue;
+    text-transform: uppercase;
+}
+.navigation-background {
+    background-color: deepskyblue;
+}
+
+
+/* LEARNING PAGE */
+.html-content{
+    position: relative;
+    padding: 7% 15%;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.navbar-background{
+    background: linear-gradient(-45deg, deepskyblue 80%, red 20%)!important;
+}
+
+.html-content{
+    background-color: #f7f7f7;
+}
+.lesson-block{
+    
+    padding-top: 100px;
+}
+.lesson-block h3, .lesson-block p{
+    margin-bottom: 20px;
+}
+
+
+.footer{
+    padding: 2%;
+    text-align: center;
+    color: white;
+    background-color: #222;
+}
+.footer p {
+    margin: 0;
+}
+
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotate(0);
+    }
+}
+    
+@media(min-width:768px) {
+    #side-nav{
+        position: fixed!important;
+        top: 70px;
+        overflow-y: auto;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        background: linear-gradient(-45deg, deepskyblue 75%, red 25%);
+        display: block;
+        
+    }
+    #side-nav>li:first-child{
+        margin-top: 20px;   
+    }
+    #side-nav li{
+        margin-left: 16px;
+        margin-bottom: 20px;
+        padding: 5px 20px;
+    }
+    #side-nav li a{
+        color: white;
+    }
+    .navbar-left{
+        position: absolute;
+        right: 1%;
+    }
+}
+@media(max-width: 991px){
+    .navbar-left{
+        margin-right: 60px;
+    }
+    #side-nav li a{
+        color: white;
+    }
+    .navbar .nav-item .nav-link{
+        padding: 0 10px;
+        margin:10px 0;
+    }
+}
