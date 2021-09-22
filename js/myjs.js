@@ -1,3 +1,16 @@
+var windowSize = window.innerWidth;
+window.addEventListener("resize", function (){
+    var navbar = document.querySelector(".navbar");
+    var windowSize = window.innerWidth;
+    console.log(windowSize);
+    if (windowSize <= 768) {
+        navbar.classList.remove("fixed-top")
+    }
+    else {
+        navbar.classList.add("fixed-top")
+    }
+}) 
+
 const laptopContent = document.querySelector('#home-info');
 var text = "Learn The Front End Web Development with Emerson S. Baguyo";
 var i = 0;
@@ -72,3 +85,4 @@ else if(windowScroll <=59){
     
 }
 })
+

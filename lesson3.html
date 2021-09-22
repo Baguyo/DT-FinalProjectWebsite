@@ -16,10 +16,10 @@
                 
                     <ul class="nav navbar-left">
                         <li class="nav-item">
-                            <a href="" class="nav-link">Home</a>
+                            <a href="index.html" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">About Us</a>
+                            <a href="about.html" class="nav-link">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-link">Contact Us</a>
@@ -39,73 +39,45 @@
                             <a href="lesson.html" >HTML <span class="sr-only">(current)</span></a>
                         </li>
                         <li>
-                            <a href="#" data-toggle="collapse" data-target="#css">CSS <span class="sr-only">(current)</span></a>
-                            <ul class="collapse" id="css">
-                                <li class="nav-item">
-                                    <a href="#embed">EMBED CSS</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#targeting">TARGETING</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#font-size">FONT-SIZE</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#color">COLOR</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#font-weight">FONT-WEIGHT</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#background-color">BACKGROUND-COLOR</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#height-and-width">HEIGHT AND WIDTH</a>
-                                </li>
-                                
-                                <li class="nav-item">
-                                    <a href="#margin-padding">MARGIN AND PADDING</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#font-family">FONT-FAMILY</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#nav">NAV</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#hover">HOVER</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#specificity">SPECIFICTY</a>
-                                </li>
-                            </ul>
+                            <a href="lesson2.html">CSS <span class="sr-only">(current)</span></a>
                             <!-- DROPDOWN HERE -->
                         </li>
                         <li>
                             <a href="#" data-toggle="collapse" data-target="#javascript">JAVASCRIPT <span class="sr-only">(current)</span></a>
                             <ul class="collapse" id="javascript">
                                 <li class="nav-item">
-                                    HTML
+                                    <a href="#embed">EMBED JS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#variable">VARIABLE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#alert">ALERT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#prompt">PROMPT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#conditional">CONDITIONAL</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#document-getelementbyid">GET ELEMENT BY ID</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#document-getelementbyclassname">GET ELEMENT BY CLASSNAME</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="#document-getelementbytagname">GET ELEMENT BY TAG NAME</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="#event-listener">EVENT LISTENER</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#" data-toggle="collapse" data-target="#bootstrap">BOOTSTRAP <span class="sr-only">(current)</span></a>
-                            <ul class="collapse" id="bootstrap">
-                                <li class="nav-item">
-                                    HTML
-                                </li>
-                                    
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" data-toggle="collapse" data-target="#jquery">JQUERY<span class="sr-only">(current)</span></a>
-                            <ul class="collapse" id="jquery">
-                                <li class="nav-item">
-                                    HTML
-                                </li>
-
-                            </ul>
+                            <a href="lesson4.html" >BOOTSTRAP <span class="sr-only">(current)</span></a>
                         </li>
                     </ul>
                 </div>
@@ -251,160 +223,97 @@
                                 <h3>GET ELEMENT BY ID</h3>
                                 <p>
                                     It returns the html element that has the ID attribute selected by document.getElementById() function.
+                                    the variable that store the element can now be manipulate and it will apply the changes to the element.
                                 </p>
                                 <div class="row">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-12">
                                         <h5>SAMPLE CODE</h5>
-                                        <img src="img/background-color.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <h5>RESULT IN WEB</h5>
-                                            <img src="img/background-colorResult.png" alt="" class="img-fluid">
+                                        <img src="img/getId.png" alt="" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="lesson-block" id="height-and-width">
-                                <h3>HEIGHT AND WIDTH</h3>
+                            <div class="lesson-block" id="document-getelementbyclassname">
+                                <h3>GET ELEMENT BY CLASS NAME</h3>
                                 <p>
-                                    Height property change the height of the element value can be by px, rem, em and etc.
-                                    Width property change the width of the element value can be by px, rem, em and etc
-                                    
+                                    It returns the html element that has the class attribute selected by document.getElementById() function.
+                                    the variable that store the element can now be manipulate and it will apply the changes to the element.
+                                    The sample code below also use style it will applied the style you declare
+                                    TAKE NOTE! it will store the element in an array form but it cannot applied array function.
+                                    for the style the properties that are two word for example font-size it will be written in font-size
+                                    a camel casing naming convention.
+
                                 </p>
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <h5>SAMPLE CODE</h5>
-                                        <img src="img/heightAndWidth.png" alt="" class="img-fluid">
+                                        <img src="img/classname.png" alt="" class="img-fluid">
                                     </div>
                                     <div class="col-lg-6">
                                         <h5>RESULT IN WEB</h5>
-                                            <img src="img/heightAndWidthResult.png" alt="" class="img-fluid">
+                                            <img src="img/classResult.png" alt="" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="lesson-block" id="margin-padding">
-                                <h5>Key points</h5>
-                                <p>BOX MODEL it is a term that describe the element content size, padding, margin and etc
-                                    in other words all element treat as a container or box and all of them have a default padding or space outside the content, margin it is a space outside the padding and etc.
-                                </p>
-                                <h3>PADDING</h3>
+                            <div class="lesson-block" id="document-getelementbytagname">
+                                <h3>GET ELEMENT BY TAG NAME</h3>
                                 <p>
-                                    Padding property is a space outside the content size. Value can be define in different format for example
-                                    padding: 2px 3px 4px 5px; if the padding is define in a four value format it applies the clockwise rotation the first value is for
-                                    top direction the second is for right direction the third is for bottom direction and the last value is for left direction
+                                    It returns the html element that been selected by document.getElementByTagName function.
+                                    the variable that store the element can now be manipulate and it will apply the changes to the element.
+                                    TAKE NOTE! it will store the element in an array form but it cannot applied array function.
+                                    The sample code below also use the classlist object and some sort of function first the classlist.add()
+                                    it add the class to the selected element. classlist.remove() it remove the class to the selected element.
                                 </p>
-                                <h3>MARGIN</h3>
-                                <p>
-                                    Margin property is a space outside the padding. The value for margin is same concept with the padding.
-                                </p>
+                                
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <h5>SAMPLE CODE</h5>
-                                        <img src="img/padding-margin.png" alt="" class="img-fluid">
+                                        <img src="img/tagname.png" alt="" class="img-fluid">
                                     </div>
                                     <div class="col-lg-6">
                                         <h5>RESULT IN WEB</h5>
-                                            <img src="img/padding-marginResult.png" alt="" class="img-fluid">
+                                            <img src="img/tagnameResult.png" alt="" class="img-fluid">
                                     </div>
                                 </div>    
                             </div>
 
-                            <div class="lesson-block" id="font-family">
-                                <h5>KEY POINTS</h5>
+                            <div class="lesson-block" id="event-listener">
+                                <h3>EVENT-LISTENER</h3>
                                 <p>
-                                    When creating a website it is ideal to only use two to three kind of fonts
-                                    also it's recommended when your heading text have a font-family of serif, the 
-                                    body text must be sans-serif or vice versa.
+                                    There are several types of events the sample code below will demonstrate the click event and the mouseover
                                 </p>
-                                <h3>FONT-FAMILY</h3>
+                                <h4>CLICK EVENT</h4>
                                 <p>
-                                    Font-family property change the font type of a text
+                                    It will execute when the selected element has been click.
                                 </p>
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <h5>SAMPLE CODE</h5>
-                                        <img src="img/font-family.png" alt="" class="img-fluid">
+                                        <img src="img/click.png" alt="" class="img-fluid">
                                     </div>
                                     <div class="col-lg-6">
                                         <h5>RESULT IN WEB</h5>
-                                            <img src="img/font-familyResult.png" alt="" class="img-fluid">
+                                            <img src="img/clickResult.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <h4>MOUSEOVER</h4>
+                                <p>
+                                    The code will be executed when the mouse is over the element.
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h5>SAMPLE CODE</h5>
+                                        <img src="img/mouseOver.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h5>RESULT IN WEB</h5>
+                                            <img src="img/mouseOverResult.png" alt="" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
                             
-                            <div class="lesson-block" id="nav">
-                                <h5>KEY POINTS</h5>
-                                <p>
-                                    Display property have different values: <em>BLOCK</em> it make the element take the full width and with display: block,
-                                    elements can be manipulate the default width and height.
-                                    <br>
-                                    <em>INLINE</em>
-                                    it makes the elements display in one row TAKE NOTE! with inline value elements width and height cannot be changed.
-                                    <br>
-                                    <em>INLINE-BLOCK</em>
-                                    This value is flexible because it makes the elements display in one row also it can be manipulate the default width and height.
-                                </p>
-                                <h3>STYLING NAVBAR</h3>
-                                <p>
-                                    Styling navbar requires a several CSS declaration. TAKE NOTE!
-                                    there are different ways to style navigation in this sample code is just the basic of styling navbar
-                                    the list-style-type: none for ul tag is for removing the bullet points for every list-item, display: inline-block for li tag
-                                    make the li's display in a row and the text-decoration: none for
-                                    a tag is for removing the default text-decoration of the a tag
-                                </p>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <h5>SAMPLE CODE</h5>
-                                        <img src="img/nav.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <h5>RESULT IN WEB</h5>
-                                        <img src="img/navigationResult.png" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                                
-                                
-                            </div>
-
-                            <div class="lesson-block" id="hover">
-                                <h3>HOVER</h3>
-                                <p>
-                                    pseudo class it used to define a special state of an element in this example it will use hover pseudo class
-                                    hover will be triggered when the mouse is over the target element. and then all the CSS declaration inside hover code block will be applied
-                                </p>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <h5>SAMPLE CODE</h5>
-                                        <img src="img/hover.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <h5>RESULT IN WEB</h5>
-                                        <img src="img/hoverResult.png" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
                             
-                            <div class="lesson-block" id="specificity">
-                                <h3>SPECIFICITY</h3>
-                                <p>
-                                    This concept for styling is very crucial because SPECIFICITY comes to play when your code has a lot of
-                                    parent element and child elements. The sample code show that the div is the parent element while the h3 and p tag 
-                                    are the children because they are inside the div element. The simple task is to make the h3 color gold and the p tag set to background-color
-                                    red. TAKE NOTE! If the div element set the color: gold both children will applied the color gold. That's not want we want to do, the sample code 
-                                    below show the targeting by SPECIFICTY WORKS
-                                </p>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <h5>SAMPLE CODE</h5>
-                                        <img src="img/specificity.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <h5>RESULT IN WEB</h5>
-                                        <img src="img/specificityResult.png" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
                             
                             
 

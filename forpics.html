@@ -6,16 +6,36 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            .col-lg-4{
+                border: 1px solid black;
+            }
+        </style>
+    
     </head>
     <body>
 
-        <p>
-            
-        </p>
 
-        <script>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 bg-danger">
+                    <h1 class="text-light">BOOTSTRAP</h1>
+                    <button class="btn btn-lg btn-dark">CLICK ME</button>
+                </div>            
+                <div class="col-lg-4 bg-primary">
+                    <h1 class="text-danger">COLUMN</h1>
+                    <button class="btn btn-sm btn-warning">CLICK ME</button>
+                </div>           
+                <div class="col-lg-4 bg-success">
+                    <h1 class="text-warning">SAMPLE</h1>
+                    <button class="btn btn-md btn-danger">CLICK ME</button>
+                </div>        
+            </div>
             
-        </script>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>LEARN WEB</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body>
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-background">
+                <div class="container-fluid">
+                    <a class="navbar-brand">Learn Front End</a>
+                
+                    <ul class="nav navbar-left">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+
+
+
+                <div id="my-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav ml-auto" id="side-nav">
+                        <li>
+                            <a href="lesson.html" >HTML <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <a href="lesson2.html">CSS <span class="sr-only">(current)</span></a>
+                            <!-- DROPDOWN HERE -->
+                        </li>
+                        <li>
+                            <a href="lesson3.html">JAVASCRIPT <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="collapse" data-target="#bootstrap">BOOTSTRAP <span class="sr-only">(current)</span></a>
+                            <ul class="collapse" id="bootstrap">
+                                <li class="nav-item">
+                                    <a href="#embed">EMBED BOOTSTRAP</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#containers">CONTAINERS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#columns">COLUMNS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#background">BACKGROUND</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#typography">TYPOGRAPHY</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#button">BUTTON</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+       
+                </div>
+                    
+                
+            </nav>
+
+            <div class="html-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-10">
+                            <h1>
+                                BOOTSTRAP
+                            </h1>
+                            <hr>
+                            <p>
+                                Bootstrap is a free and open source css framework, it help the developers to make responsive website that is viewable to any screen devices.
+                                to use bootstrap components it must specify the components to use in the element class attribute.
+                            </p>
+
+                            <!-- <div id="doctype"><br> <br></div> -->
+                            <div class="lesson-block" id="embed">
+                                <h3>BOOTSTRAP EMBEDING</h3>            
+                                <h4>ONLINE EMBED</h4>
+                                <p>
+                                    To use bootstrap in html via online embed you must go to the Boostrap Website and copy the cdn the link tag must 
+                                    placed before the closing head tag and the scripts are before the closing body tag.
+                                </p>
+                                <img src="img/bootstrapEmbed.png" alt="" class="img-fluid">
+
+                                
+                            </div>
+                            
+                            <div class="lesson-block" id="containers">
+
+
+                                <h3>BOOTSTRAP CONTAINERS</h3>
+                                <h4>CONTAINER</h4>
+                                <p>
+                                    Container class used for half-width container of the display screen.
+                                </p>
+                                
+
+                                <h4>CONTAINER-FLUID</h4>
+                                <p>
+                                    Container-fluid class is used for full-width container of the display screen.
+                                </p>
+                                <img src="img/container.png" alt="" class="img-fluid">
+
+                                
+                            </div>
+
+                            <div class="lesson-block" id="columns">
+                                
+                                <h3>COLUMNS</h3>
+                                <p> 
+                                    Column class is defined as col-screen size-number of columns. the full width is cover by a 12 column per row.
+                                    defining Column class make the website responsive in different screen sizes.
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h4>SAMPLE CODE</h4>
+                                        
+                                        <img src="img/column-code.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h4>RESULT IN WEB</h4>
+                                        <img src="img/column.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="lesson-block" id="background">
+                                <h3>BOOTSTRAP BACKGROUND</h3>
+                                <p>
+                                    Bootstrap background class is defined by a bg-type of background in class attributes. Types of backgrounds are 
+                                    primary, danger, success, warning and many more.
+                                </p>    
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h4>SAMPLE CODE</h4>
+                                        <img src="img/bg-code.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h4>RESULT IN WEB</h4>
+                                        <img src="img/bg-web.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="lesson-block" id="typography">
+                                <h3>BOOTSTRAP TYPOGRAPHY</h3>
+                                <p>
+                                    Bootstrap typography make the text in color it declare in a way of text-type of typography in class attribute.
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h4>SAMPLE CODE</h4>
+                                        <img src="img/text-code.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h4>RESULT IN WEB</h4>
+                                        <img src="img/text-web.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                            <div class="lesson-block" id="button">
+                                <h3>BOOTSTRAP BUTTON</h3>
+                                <p>
+                                    Bootstrap button class make the element appear like button it can be modify if it's small, medium and large. button class can also change color
+                                    by applying same rule it background class.
+                                    
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h5>SAMPLE CODE</h5>
+                                        <img src="img/button-code.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h5>RESULT IN WEB</h5>
+                                        <img src="img/button-web.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            
+                            
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+                     
+            <div class="footer">
+                <p>&copy; LearnFrontEnd2021</p>
+            </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
