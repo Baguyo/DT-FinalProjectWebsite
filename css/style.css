@@ -176,6 +176,9 @@ h1, .navbar-brand, h3, h4, h5{
     font-weight: 500;
     
 }
+.lesson-block h4{
+    margin-top: 20px;
+}
 .footer{
     padding: 2%;
     text-align: center;
