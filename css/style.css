@@ -227,6 +227,10 @@ h1, .navbar-brand, h3, h4, h5{
         position: absolute;
         right: 1%;
     }
+    .html-content .container{
+        padding-left: 200px;
+        margin: 0 auto;
+    }
 }
 @media(max-width: 991px){
     .navbar-left{
