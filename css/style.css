@@ -204,6 +204,7 @@ h1, .navbar-brand, h3, h4, h5{
     #side-nav{
         position: fixed!important;
         top: 70px;
+        z-index: 99;
         overflow-y: auto;
         left: 0;
         width: 200px;
@@ -229,7 +230,9 @@ h1, .navbar-brand, h3, h4, h5{
     }
     .html-content .container{
         padding-left: 200px;
-        margin: 0 auto;
+    }
+    .html-content .container .col-lg-12{
+        padding-top: 20px;
     }
 }
 @media(max-width: 991px){

@@ -2,7 +2,7 @@ var windowSize = window.innerWidth;
 var navbarNotSizing = document.querySelector(".navbar");
     var windowNot = window.innerWidth;
     console.log(windowNot);
-    if (windowNot <= 768) {
+    if (windowNot <= 767) {
         navbarNotSizing.classList.remove("fixed-top")
     }
     else {
@@ -15,7 +15,7 @@ window.addEventListener("resize", function (){
     var navbar = document.querySelector(".navbar");
     var windowSize = window.innerWidth;
     console.log(windowSize);
-    if (windowSize <= 768) {
+    if (windowSize <= 767) {
         navbar.classList.remove("fixed-top")
     }
     else {
